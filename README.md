@@ -1,12 +1,16 @@
 # MultiAuth For Laravel 5.1
 ---
 ## Installation
-To install MultiAuth as a Composer package to be used with Laravel 5, simply run:
-
-```php
-composer require "zionon/multiauth: 1.0"
+First, pull in the package through Composer.
+```PHP
+"require": {
+    "kbwebs/multiauth": "~1.0"
+}
 ```
-
+Now you'll want to update or install via composer.
+```
+composer update
+```
 ## Authentication
 Open up the config/app.php file and replace the AuthServiceProvider with:
 ```

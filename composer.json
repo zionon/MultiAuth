@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "zionon",
-            "homepage": "https://github.com/zionon"
+            "email": "hgh110720@gmail.com"
         }
     ],
     "require": {
@@ -15,8 +15,7 @@
         "illuminate/console": "~5.1",
         "illuminate/database": "~5.1",
         "illuminate/filesystem": "~5.1",
-        "illuminate/support": "~5.1",
-        "illuminate/http": "~5.1"
+        "illuminate/support": "~5.1"
     },
     "autoload": {
         "psr-4": {
