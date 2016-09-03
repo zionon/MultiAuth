@@ -7,7 +7,7 @@ use Illuminate\Auth\AuthServiceProvider as OriginalAuthServiceProvider;
 class AuthServiceProvider extends OriginalAuthServiceProvider
 {
 
-	protected $defer = true;
+    //	protected $defer = true;
 	/**
 	* Register bindings in the container.
 	* @return void
