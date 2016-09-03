@@ -4,7 +4,7 @@ namespace Zionon\MultiAuth\PasswordResets;
 
 use Carbon\Carbon;
 use Illuminate\Database\ConnectionInterface;
-use Kbwebs\MultiAuth\PasswordResets\Contracts\CanResetPassword as CanResetPasswordContract;
+use Zionon\MultiAuth\PasswordResets\Contracts\CanResetPassword as CanResetPasswordContract;
 
 class DatabaseTokenRepository implements TokenRepositoryInterface
 {
@@ -50,7 +50,7 @@ class DatabaseTokenRepository implements TokenRepositoryInterface
 
     /**
      * Create a new token record.
-     * @param  \Kbwebs\MultiAuth\PasswordResets\CanResetPassword    $user
+     * @param  \Zionon\MultiAuth\PasswordResets\CanResetPassword    $user
      * @param  string                                               $type
      * @return string
      */
@@ -68,7 +68,7 @@ class DatabaseTokenRepository implements TokenRepositoryInterface
 
     /**
      * Delete all existing reset tokens from the database.
-     * @param  \Kbwebs\MultiAuth\PasswordResets\CanResetPassword    $user
+     * @param  \Zionon\MultiAuth\PasswordResets\CanResetPassword    $user
      * @param  string                                               $type
      * @return int
      */
@@ -91,7 +91,7 @@ class DatabaseTokenRepository implements TokenRepositoryInterface
 
     /**
      * Determine if a token record exists and is valid.
-     * @param  \Kbwebs\MultiAuth\PasswordResets\CanResetPassword  $user
+     * @param  \Zionon\MultiAuth\PasswordResets\CanResetPassword  $user
      * @param  string  $token
      * @param  string  $type
      * @return bool
