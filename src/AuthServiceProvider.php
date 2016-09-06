@@ -6,12 +6,6 @@ use Illuminate\Auth\AuthServiceProvider as OriginalAuthServiceProvider;
 
 class AuthServiceProvider extends OriginalAuthServiceProvider
 {
-	/**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = true;
 
 	/**
 	* Register bindings in the container.
