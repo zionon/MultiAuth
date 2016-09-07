@@ -12,7 +12,7 @@ Open up the config/app.php file and replace the AuthServiceProvider with:
 ```php
 Illuminate\Auth\AuthServiceProvider::class -> Zionon\MultiAuth\AuthServiceProvider::class
 ```
-And open config/auth.php file and remove:
+And open config/auth.php file and remove:(如果搭配entrust使用的话，建议保留)
 ```PHP
 'driver'  => 'eloquent'
 'model'   => App\User::class,
