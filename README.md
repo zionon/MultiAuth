@@ -46,7 +46,7 @@ Illuminate\Foundation\Auth\ResetsPasswords  ->
 Zionon\MultiAuth\Auth\ResetsPasswords
 ```
 
-后台不需要的邮件重置的密码的话，下面的不需要做
+后台不需要邮件重置的密码的话，下面的可不需要做
 
 Open up config/app.php file and replace the PasswordResetServiceProvider with:
 
@@ -121,6 +121,9 @@ $remember          是否使用记住我功能
 完善多重登录
 
 #### Password resets:
+
+密码也改写了，用了trait
+
 It works just like the original laravel authentication library,
 the only change is the **user()** or **admin()** it will match the auth type, as your defining in the multi-auth array:
 ```
