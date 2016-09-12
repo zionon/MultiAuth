@@ -119,7 +119,7 @@ trait AuthenticatesUsers
     public function getLogout(Request $request)
     {
         if ($this->getRemember() == 'true') {
-            Auth::logout();
+            $this->getAuthManager()->logout();
         } else {
             $request->session()->flush();
         }
