@@ -121,7 +121,7 @@ trait AuthenticatesUsers
         if ($this->getRemember() == 'true') {
             $this->getAuthManager()->logout();
         } else {
-            $request->session()->flush();
+            $request->session()->forget($this->getAuthManager()->getName());
         }
 
         return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/');
